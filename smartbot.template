@@ -1,0 +1,50 @@
+# ---------------------------
+# Intelligent Chatbot Template
+# ---------------------------
+
+# Wikipedia queries
+%respond("tell me about *", "whoIs", 1)
+%respond("give me definition of *", "whoIs", 1)
+%respond("who is *", "whoIs", 1)
+%respond("what is *", "whoIs", 1)
+
+# Remembering user name
+%respond("my name is *", "rememberName", 1)
+%respond("i am *", "rememberName", 1)
+%respond("what is my name", "getName")
+
+# Jokes
+%respond("tell me a joke", "joke")
+%respond("make me laugh", "joke")
+
+# Weather
+%respond("weather in *", "weather", 1)
+%respond("what's the weather in *", "weather", 1)
+
+# Greetings
+hello
+    Hello! How can I help you today?
+
+hi
+    Hi there! Ask me about Wikipedia, jokes, weather, or anything else.
+
+hey
+    Hey! I’m your intelligent chatbot.
+
+good morning
+    Good morning! Hope you have a great day.
+
+good night
+    Good night! Sweet dreams.
+
+# Farewell
+bye
+    Goodbye! Talk to you soon.
+
+see you
+    See you later! Take care.
+
+# Default fallback (when no match found)
+*
+    Sorry, I don’t understand that yet. Can you rephrase?
+

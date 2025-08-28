@@ -1,0 +1,6 @@
+chatbotAI
+wikipedia
+pyjokes
+requests
+flask
+gradio
